@@ -12,3 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(el => observer.observe(el));
 });
+
+function togglePlay(videoId) {
+    let video = document.getElementById(videoId);
+    let button = video.nextElementSibling;
+
+    if (video.paused) {
+        video.play();
+        video.muted = false;
+        button.textContent = "⏸ Пауза";
+    } else {
+        video.pause();
+        button.textContent = "▶ Играть";
+    }
+}
