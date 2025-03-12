@@ -57,3 +57,37 @@ body {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    video, img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .caption {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.3em;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    .caption {
+        font-size: 0.85em;
+    }
+}
