@@ -25,4 +25,8 @@ function togglePlay(videoId) {
         video.pause();
         button.textContent = "ИГРАТЬ";
     }
+
+    video.onended = function() {
+        button.textContent = "ИГРАТЬ";
+    };
 }
