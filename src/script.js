@@ -20,9 +20,9 @@ function togglePlay(videoId) {
     if (video.paused) {
         video.play();
         video.muted = false;
-        button.textContent = "⏸ Пауза";
+        button.textContent = "ПАУЗА";
     } else {
         video.pause();
-        button.textContent = "▶ Играть";
+        button.textContent = "ИГРАТЬ";
     }
 }
