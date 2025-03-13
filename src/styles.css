@@ -12,11 +12,17 @@ body {
     flex-direction: column;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 .container {
     text-align: center;
     padding: 20px;
     max-width: 100%;
     width: 90%;
+    box-sizing: border-box;
 }
 
 .title {
